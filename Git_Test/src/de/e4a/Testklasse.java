@@ -26,8 +26,33 @@ public class Testklasse {
 			i++;
 		}
 		
+		int maximum = max(zahlen1);
+		System.out.println("Das Maximum ist: " + maximum);
+		int minimum = minimal(zahlen1);
+		System.out.println("Das Minimum ist:" + minimum);
+	}
 		
+		public static int max(int[]i) {
+			int max =i[0];
+			for (int index = 1; index < i.length; index++){
+				if (i[index]> max){
+					max = i[index];
+				}
+			}
+			return max;
+		}
+		
+		
+		public static int minimal(int []array){
+			int min = array[0];
+			for (int index=1; index< array.length; index++){
+				if(array[index] < min){
+					min = array[index];
+				}
+			}
+			return min;
+		}
 	}
 		
 		
-}
+
